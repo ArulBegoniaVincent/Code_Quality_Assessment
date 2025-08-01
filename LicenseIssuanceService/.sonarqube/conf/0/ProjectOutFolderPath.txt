@@ -1,0 +1,1 @@
+D:\Web API & Microservice Assessment\LicenseIssuanceService\.sonarqube\out\0
