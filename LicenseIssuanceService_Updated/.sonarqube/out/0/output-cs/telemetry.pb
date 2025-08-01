@@ -1,0 +1,1 @@
+†RpD:\Web API & Microservice Assessment\LicenseIssuanceService\LicenseIssuanceService\LicenseIssuanceService.csproj¢net8.0òCSharp12

@@ -1,0 +1,160 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "LicenseIssuanceService",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/LicenseIssuance": {
+      "post": {
+        "tags": [
+          "LicenseIssuance"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LicenseIssuance"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LicenseIssuance"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LicenseIssuance"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "LicenseIssuance"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/LicenseIssuance/{id}": {
+      "get": {
+        "tags": [
+          "LicenseIssuance"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "LicenseIssuance"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LicenseIssuance"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LicenseIssuance"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LicenseIssuance"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "LicenseIssuance"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "LicenseIssuance": {
+        "required": [
+          "licenseExpirationDate",
+          "licenseIssuerName"
+        ],
+        "type": "object",
+        "properties": {
+          "licenseIssuanceID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "licenseIssuerName": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "licenseExpirationDate": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

@@ -1,0 +1,81 @@
+[
+  {
+    "ContainingType": "LicenseIssuanceService.Controllers.LicenseIssuanceController",
+    "Method": "Create",
+    "RelativePath": "api/LicenseIssuance",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "licenseIssuance",
+        "Type": "LicenseIssuanceService.Model.LicenseIssuance",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LicenseIssuanceService.Controllers.LicenseIssuanceController",
+    "Method": "GetAll",
+    "RelativePath": "api/LicenseIssuance",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LicenseIssuanceService.Controllers.LicenseIssuanceController",
+    "Method": "Get",
+    "RelativePath": "api/LicenseIssuance/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LicenseIssuanceService.Controllers.LicenseIssuanceController",
+    "Method": "Update",
+    "RelativePath": "api/LicenseIssuance/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "licenseIssuance",
+        "Type": "LicenseIssuanceService.Model.LicenseIssuance",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LicenseIssuanceService.Controllers.LicenseIssuanceController",
+    "Method": "Delete",
+    "RelativePath": "api/LicenseIssuance/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
